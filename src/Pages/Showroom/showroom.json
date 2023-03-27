@@ -1,0 +1,44 @@
+{
+    "titulo": "Showroom",
+    "subtitlo": "Lorem ipsum dolor sit amet",
+    "descripcion": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+    "url_espacio_virtual": "",
+    "video_frame": "",
+    "video_portada": "/assets/showroom/frame_video.png",
+    "primer_slider": [
+        {
+            "imagen": "/assets/home/slider.png",
+            "nombre": "Lorem ipsu dolor"
+        },
+        {
+            "imagen": "/assets/home/slider.png",
+            "nombre": "Lorem ipsu dolor 2"
+        }
+    ],
+    "sliders": [
+        {
+            "slider": [
+                {
+                    "imagen": "/assets/home/slider.png",
+                    "nombre": "Lorem ipsu dolor"
+                },
+                {
+                    "imagen": "/assets/home/slider.png",
+                    "nombre": "Lorem ipsu dolor 2"
+                }
+            ]
+        },
+        {
+            "slider": [
+                {
+                    "imagen": "/assets/home/slider.png",
+                    "nombre": "Lorem ipsu dolor"
+                },
+                {
+                    "imagen": "/assets/home/slider.png",
+                    "nombre": "Lorem ipsu dolor 2"
+                }
+            ]
+        }
+    ]
+}

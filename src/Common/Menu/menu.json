@@ -1,0 +1,38 @@
+[
+    {
+        "link": "/nosotros",
+        "texto": "Nosotros",
+        "link_ENG": "/eng/about-us",
+        "texto_ENG": "About us"
+    },
+    {
+        "link": "proyectos",
+        "texto": "Proyectos",
+        "link_ENG": "/eng/projects",
+        "texto_ENG": "Projects"
+    },
+    {
+        "link": "/marcas",
+        "texto": "Marcas",
+        "link_ENG": "/eng/brands",
+        "texto_ENG": "Brands"
+    },
+    {
+        "link": "/showrooms",
+        "texto": "Showroom",
+        "link_ENG": "/eng/showroom",
+        "texto_ENG": "Showroom"
+    },
+    {
+        "link": "/favoritos",
+        "texto": "Favoritos",
+        "link_ENG": "/eng/favorites",
+        "texto_ENG": "Favorites"
+    },
+    {
+        "link": "/contacto",
+        "texto": "Contacto",
+        "link_ENG": "/eng/contact",
+        "texto_ENG": "Contact"
+    }
+]

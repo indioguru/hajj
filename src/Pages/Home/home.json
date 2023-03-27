@@ -1,0 +1,79 @@
+{
+
+    "banner": [
+        {
+            "imagen": "/assets/home/banner_home.png",
+            "nombre": "Nombre de referencia",
+            "link": "asasaasfasfaf"
+        },
+        {
+            "imagen": "/assets/home/banner_home.png",
+            "nombre": "Nombre de referencia",
+            "link": "asasaasfasfaf"
+        },
+        {
+            "imagen": "/assets/home/banner_home.png",
+            "nombre": "Nombre de referencia",
+            "link": "asasaasfasfaf"
+        }
+    ],
+    "titulo_propuesta": "Propuesta de Valor",
+    "subtitulo_propuesta": "Lorem ipsum dolor sit amet",
+    "info_propuesta": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+    "url_boton_propuesta": "https://www.google.com/",
+    "text_boton_propuesta": "Sobre nosotros",
+    "imagen_propuesta": "/assets/home/img_propuestadevalor.png",
+    "titulo_proyectos_destacados": "Proyectos destacados",
+    "subtitulo_proyectos_destacados": "Designless en todo el mundo",
+    "projects": [
+        {
+            "imagen": "/assets/projects/img2.png",
+            "nombre": "Proyecto 1"
+        },
+        {
+            "imagen": "/assets/projects/img2.png",
+            "nombre": "Proyecto 2"
+        }
+    ],
+    "titulo_marcas": "Marcas",
+    "subtitulo_marcas": "Aliados con las mejores marcas de diseño",
+    "info_marcas": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+    "logos_marcas": [
+        "/assets/home/logo.png",
+        "/assets/home/logo.png",
+        "/assets/home/logo.png",
+        "/assets/home/logo.png",
+        "/assets/home/logo.png",
+        "/assets/home/logo.png"
+    ],
+    "titulo_favoritos": "Nuestros favoritos",
+    "subtitulo_favoritos": "Una selección de Hajj Designless",
+    "slider_favoritos": [
+        {
+            "imagen": "/assets/home/banner_home.png",
+            "logo": "/assets/home/logo.png",
+            "nombre_referencia": "Referencia X",
+            "nombre_marca": "Marca X"
+        },
+        {
+            "imagen": "/assets/home/banner_home.png",
+            "logo": "/assets/home/logo.png",
+            "nombre_referencia": "Referencia X",
+            "nombre_marca": "Marca X"
+        }
+    ],
+    "url_boton_favoritos": "https://www.google.com/",
+    "text_boton_favoritos": "Descubre nuestras referencias",
+    "titulo_tendencias": "Tendencias",
+    "subtitulo_tendencias": "Inspiración",
+    "galeria_tendencias": [
+        {
+            "imagen": "/assets/home/banner_home.png",
+            "texto": "Ver más de referencia X"
+        },
+        {
+            "imagen": "/assets/home/banner_home.png",
+            "texto": "Ver más de referencia X"
+        }
+    ]
+}

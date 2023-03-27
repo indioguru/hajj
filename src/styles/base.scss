@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PPRadioGrotesk-Regular";
+  color: #ebe9e3;
+  background-color: #252825;
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.603);
+}
+
+.banner::-webkit-scrollbar {
+  width: 0px;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s all;
+
+  &:hover {
+    font-size: 13px;
+  }
+}
+
+hr {
+  border: 1px solid #ebe9e3;
+}
+
+img {
+  width: 100%;
+}
+
+
+.hideItem {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Fonts and texts */
+h1 {
+  font-family: "Elanor exBdlt";
+}
+
+h2 {
+  font-family: "Elanor Extra light" !important;
+}
+
+h3 {
+  color: #7c706e;
+}
+img {
+  width: 100%;
+}A
+
+.eleanor-light {
+  font-family: "Elanor Extra light";
+}
+
+.PR-light{
+  font-family: "PPRadioGrotesk-Ultralight";
+
+}
+
+.max_width_container {
+  position: relative;
+  width: 85%;
+  max-width: 1500px;
+  margin: 0px auto;
+}
+
+/* Invitation to contact */
+.invitation-to-contact p {
+  font-size: 14px;
+}
+
+.invitation-to-contact strong {
+  font-family: "Elanor Extra light";
+  font-weight: 300;
+  font-size: 25px;
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.invitation-to-contact div {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+@media (min-width: 1024px) {
+  .invitation-to-contact p {
+    font-size: 18px;
+  }
+
+  .invitation-to-contact strong {
+    font-size: 30px;
+  }
+}

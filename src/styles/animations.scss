@@ -1,0 +1,42 @@
+/*This sheet is only for animation styles in scroll*/
+
+.width-92 {
+  width: 92.5% !important;
+}
+.opacity-1 {
+  opacity: 1 !important;
+}
+
+.translate-zero {
+  transform: translate(0, 0) !important;
+}
+
+.padding-top-zero {
+  padding-top: 0 !important;
+}
+
+.active_animation strong {
+  opacity: 1;
+}
+
+.scale-one {
+  transform: scale(1) !important;
+}
+
+.menu_active {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.animation_logo {
+  animation: fadeIn 1s forwards 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

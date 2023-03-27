@@ -1,0 +1,33 @@
+{
+    "titulo": "Nuestros favoritos",
+    "subtitulo": "Lorem ipsum dolor sit amet",
+    "info": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+    "imagen": "/assets/favoritos/img1.png",
+
+    "favoritos": [
+        {
+            "imagen": "/assets/favoritos/img2.png",
+            "referencia_titulo": "Referencia X",
+            "marca_titulo": "Marca X",
+            "logo": "/assets/home/logo.png",
+            "info": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+            "link": "google.com"
+        },
+        {
+            "imagen": "/assets/favoritos/img2.png",
+            "referencia_titulo": "Referencia X",
+            "marca_titulo": "Marca X",
+            "logo": "/assets/home/logo.png",
+            "info": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+            "link": "google.com"
+        },
+        {
+            "imagen": "/assets/favoritos/img2.png",
+            "referencia_titulo": "Referencia X",
+            "marca_titulo": "Marca X",
+            "logo": "/assets/home/logo.png",
+            "info": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+            "link": "google.com"
+        }
+    ]
+}

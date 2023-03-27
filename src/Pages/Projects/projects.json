@@ -1,0 +1,49 @@
+{
+    "titulo": "Nuestros proyectos",
+    "subtitulo": "Designless en todo el mundo",
+    "info": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+    "imagen": "/assets/favoritos/img1.png",
+    "proyectos": [
+        {
+            "slider": [
+                {
+                    "imagen": "/assets/home/slider.png",
+                    "nombre": "Lorem ipsu dolor"
+                },
+                {
+                    "imagen": "/assets/home/slider.png",
+                    "nombre": "Lorem ipsu dolor 2"
+                }
+            ],
+            "titulo": "Lorem ipsum",
+            "info": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+        },
+        {
+            "slider": [
+                {
+                    "imagen": "/assets/home/slider.png",
+                    "nombre": "Lorem ipsu dolor"
+                },
+                {
+                    "imagen": "/assets/home/slider.png",
+                    "nombre": "Lorem ipsu dolor 2"
+                }
+            ],
+            "titulo": "Lorem ipsum",
+            "info": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+        }
+    ],
+    "titulo_upcoming_proyectos": "Upcoming projects",
+    "subtitulo_upcoming_proyectos": "Lorem ipsum dolor sit amet",
+    "info_upcoming_proyectos": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+    "slider_upcoming_proyectos": [
+        {
+            "imagen": "/assets/home/slider.png",
+            "nombre": "Lorem ipsu dolor"
+        },
+        {
+            "imagen": "/assets/home/slider.png",
+            "nombre": "Lorem ipsu dolor 2"
+        }
+    ]
+}

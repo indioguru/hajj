@@ -1,0 +1,34 @@
+{
+    "titulo": "Marcas aliadas",
+    "info": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+    "texto_boton": "Agenda una cita",
+    "url_boton": "asasas",
+    "logos_marcas": [
+        "/assets/home/logo.png",
+        "/assets/home/logo.png",
+        "/assets/home/logo.png",
+        "/assets/home/logo.png",
+        "/assets/home/logo.png",
+        "/assets/home/logo.png"
+    ],
+    "marcas": [
+        {
+            "imagen": "/assets/home/slider.png",
+            "nombre": "Lorem ipsu dolor",
+            "logo": "/assets/home/logo.png",
+            "info": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+        },
+        {
+            "imagen": "/assets/home/slider.png",
+            "nombre": "Lorem ipsu dolor",
+            "logo": "/assets/home/logo.png",
+            "info": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+        },
+        {
+            "imagen": "/assets/home/slider.png",
+            "nombre": "Lorem ipsu dolor",
+            "logo": "/assets/home/logo.png",
+            "info": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+        }
+    ]
+}
