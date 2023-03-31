@@ -1,12 +1,23 @@
 import { FavoritesIntro } from "./FavoritesIntro";
 import { FavoritesItems } from "./FavoritesItems/FavoritesItems";
-import favorites from "./favorites.json";
+import { useFetch } from "../../Hooks/useFetch";
+import { Loader } from "../../Common/Loader";
+import { ButtonScrollTop } from "../../Utils/Buttons/ButtonScrollTop";
 
 export const Favorites = () => {
+  const { data: favorites, isLoading } = useFetch("favoritos");
   return (
-    <main className="bg-crema text-black overflow-hidden">
-      <FavoritesIntro {...favorites} />
-      <FavoritesItems {...favorites} />
+    <main className="favoritos bg-crema text-black overflow-hidden">
+      <Loader show={isLoading} />
+
+      {!isLoading && (
+        <>
+          <FavoritesIntro {...favorites} />
+          <FavoritesItems {...favorites} />
+          <ButtonScrollTop scrollTo="favoritos"  color="black" />
+
+        </>
+      )}
     </main>
   );
 };

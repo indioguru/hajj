@@ -1,10 +1,10 @@
-export const Button = ({ children, url, styles = "w-3/4 px-5 py-[0.5px]" }) => {
+export const Button = ({ children, url, styles = "w-3/4 px-5" }) => {
   return (
-    <a
-      className={`border lg:text-3xl rounded-3xl  mt-6 block text-center ${styles} px-5 eleanor-light lg:w-fit`}
+    <button
+      className={`border lg:text-3xl rounded-3xl py-[5px] mt-6 block text-center ${styles} px-5 eleanor-light lg:w-fit cursor-pointer hover:bg-[#625350] transition-all duration-500 `}
       href={url}
     >
       {children}
-    </a>
+    </button>
   );
 };

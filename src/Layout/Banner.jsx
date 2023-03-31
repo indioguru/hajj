@@ -4,14 +4,14 @@ export const Banner = ({ children, fondo, show }) => {
       <section>
         <div
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("${fondo}")`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url("${fondo}")`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-          className={` h-screen w-screen  relative  `}
+          className={`h-screen w-screen relative`}
         >
           {/* Logo */}
-          <div className={show ? "opacity-0 " : "opacity-0  animation_logo"}>
+          <div className={show ? "opacity-0" : "opacity-0 animation_logo"}>
             <img
               className="absolute left-0 right-0 margin-auto top-1/3  max-w-lg max_width_container"
               src="/assets/logo/hajj_logo_blanco.png"

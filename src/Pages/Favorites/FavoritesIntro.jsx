@@ -14,7 +14,7 @@ export const FavoritesIntro = ({ titulo, subtitulo, info, imagen }) => {
 
       <img
         className="image-right mt-20 lg:w-[48%] lg:mt-0 duration-1000"
-        src={imagen}
+        src={imagen.url}
         alt="imagen"
       />
     </div>

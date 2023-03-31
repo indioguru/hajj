@@ -6,7 +6,7 @@ export const Title = ({ title, subtitle }) => {
   return (
     <div className="title duration-500 translate-x-[-100vw]">
       <div className="text-coffee">
-        <p className="text-xl mb-4 lg:text-3xl  ">{title}</p>
+        <p className="text-xl mb-1 lg:text-3xl  ">{title}</p>
       </div>
       <h2 className="text-3xl lg:text-4xl lg:max-w-[50%] ">{subtitle}</h2>
     </div>

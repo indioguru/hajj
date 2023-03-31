@@ -1,4 +1,4 @@
-import { Footer } from "./Common/Footer";
+import { Footer } from "./Common/Footer/Footer";
 import { Header } from "./Common/Header";
 import { Menu } from "./Common/Menu/Menu";
 import { AppRouter } from "./Router/AppRouter";

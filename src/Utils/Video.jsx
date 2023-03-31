@@ -1,4 +1,7 @@
 export const Video = ({ url_video, portada_video }) => {
+  if (!url_video) {
+    return null;
+  }
   return (
     <iframe
       className="w-full h-[200px] lg:h-[400px] "
@@ -13,7 +16,7 @@ export const Video = ({ url_video, portada_video }) => {
         span{height:1.5em;text-align:center;font:120px/1.5 sans-serif;color:#FF4D00;text-shadow:0 0 0.5em black}
         </style>
         <a href=${url_video}> 
-            <img loading="lazy" class = "img1" src=${portada_video}>
+            <img loading="lazy" class = "img1" src=${portada_video.url}>
             <img loading="lazy" class = "img2"  src="/assets/showroom/play.png" />
         </a>
   `}

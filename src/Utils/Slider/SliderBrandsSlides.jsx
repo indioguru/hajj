@@ -20,14 +20,14 @@ export const SliderBrandsSlides = ({
           >
             <img
               className="h-full object-cover object-left-top brightness-50  cursor-pointer"
-              src={item.imagen}
+              src={item.imagen.url}
               alt="slider-imagen"
             />
           </Link>
 
           {/* Logo */}
           <div className="absolute w-2/4 max-w-[300px] left-0 right-0 m-auto top-1/2 -translate-y-1/2">
-            <img src={item.logo} alt="logo" />
+            <img src={item.logo.url} alt="logo" />
           </div>
 
           {/* Brand info */}

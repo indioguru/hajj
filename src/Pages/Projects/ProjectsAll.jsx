@@ -5,9 +5,9 @@ export const ProjectsAll = ({ proyectos }) => {
   return (
     <section className="mb-40">
       {proyectos.map((proyect, i) => (
-        <div className="mb-40">
+        <div className="mb-40" key={proyect._id}>
           <Slider
-            items={proyect.slider}
+            items={proyect.slider_imagen }
             classSlides={`proyect-page-slide-${i}`}
           />
 
@@ -20,7 +20,7 @@ export const ProjectsAll = ({ proyectos }) => {
 
       <div className="max_width_container flex justify-end text-right lg:text-left mt-32 mb-16">
         <InvitationToContact
-          styles="invitation-to-contact w-3/4 max-w-[75%] lg:max-w-[50%] mb-10"
+          styles="invitation-to-contact w-3/4 max-w-[75%] mb-10"
           boton_text="Hablemos"
           text="de cómo podemos **construir** el espacio de tus **Sueños**."
         />

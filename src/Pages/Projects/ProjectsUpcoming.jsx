@@ -19,10 +19,21 @@ export const ProjectsUpcoming = ({
         </div>
       </div>
 
-      <Slider
-        items={slider_upcoming_proyectos}
-        classSlides="slider_upcoming_proyectos"
-      />
+
+      {slider_upcoming_proyectos.map((proyect, i) => (
+        <div className="mb-40" key={proyect._id}>
+          <Slider
+            items={proyect.slider_imagen }
+            classSlides={`slider_upcoming_proyectos-${i}`}
+          />
+
+          <div className="max_width_container  ">
+            <h2 className="mt-6 mb-2 lg:w-3/4">{proyect.titulo}</h2>
+            <p className="lg:w-3/4">{proyect.info}</p>
+          </div>
+        </div>
+      ))}
+
     </section>
   );
 };

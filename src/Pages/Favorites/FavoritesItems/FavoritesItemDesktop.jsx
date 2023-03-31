@@ -22,7 +22,7 @@ export const FavoritesItemDesktop = ({
           {/* background image */}
           <img
             className=" brightness-75 h-[70vh] object-cover transition-all duration-500 "
-            src={imagen}
+            src={imagen.url}
             alt="imagen"
           />
 
@@ -33,7 +33,7 @@ export const FavoritesItemDesktop = ({
             </div>
 
             <div className="w-1/4">
-              <img src={logo} alt="logo" />
+              <img src={logo.url} alt="logo" />
             </div>
           </div>
         </div>

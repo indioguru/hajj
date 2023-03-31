@@ -35,10 +35,13 @@ body {
   width: 0px;
 }
 
+.banner-container {
+  height: calc(var(--vh, 1vh) * 100);
+}
+
 a {
   text-decoration: none;
   transition: 0.5s all;
-
   &:hover {
     font-size: 13px;
   }
@@ -51,7 +54,6 @@ hr {
 img {
   width: 100%;
 }
-
 
 .hideItem {
   opacity: 0;
@@ -72,15 +74,14 @@ h3 {
 }
 img {
   width: 100%;
-}A
-
-.eleanor-light {
-  font-family: "Elanor Extra light";
 }
 
-.PR-light{
-  font-family: "PPRadioGrotesk-Ultralight";
+.eleanor-light {
+  font-family: "Elanor Extra light" !important;
+}
 
+.PR-light {
+  font-family: "PPRadioGrotesk-Ultralight";
 }
 
 .max_width_container {
@@ -92,20 +93,19 @@ img {
 
 /* Invitation to contact */
 .invitation-to-contact p {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .invitation-to-contact strong {
-  font-family: "Elanor Extra light";
   font-weight: 300;
-  font-size: 25px;
-  opacity: 0;
+  font-size: 20px;
   transition: 0.5s all;
+  font-weight: 100;
+  font-family: "PPRadioGrotesk-Ultralight";
 }
 
 .invitation-to-contact div {
   display: inline-block;
-  margin-left: 5px;
 }
 
 @media (min-width: 1024px) {

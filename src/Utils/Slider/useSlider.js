@@ -8,13 +8,9 @@ export const useSlider = (items, classItems) => {
   useEffect(() => {
     if (items.length > 0) {
       let slideIndex = 1;
+      let time = 5000;
       showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-        setNumber(slideIndex);
-      }
-
+      setNumber(slideIndex);
       function showSlides(n) {
         let slides = document.getElementsByClassName(classItems);
         let dots = document.getElementsByClassName(`dot_${classItems}`);
@@ -39,7 +35,33 @@ export const useSlider = (items, classItems) => {
         // dots[slideIndex - 1].className += " active";
         slides[slideIndex - 1].style.display = "block";
       }
-      if (items.length > 1 && classItems) {
+
+      // Next/previous controls
+      const plusSlides = (n) => {
+        clearInterval(myTimer);
+        if (n < 0) {
+          showSlides((slideIndex -= 1));
+        } else {
+          showSlides((slideIndex += 1));
+        }
+        if (n === -1) {
+          myTimer = setInterval(function () {
+            plusSlides(n + 2);
+          }, time);
+        } else {
+          myTimer = setInterval(function () {
+            plusSlides(n + 1);
+          }, time);
+        }
+        setNumber(slideIndex);
+      };
+
+      let myTimer = setInterval(() => {
+        plusSlides(1);
+        setNumber(slideIndex);
+      }, time);
+
+      if (items.length > 0 && classItems) {
         const right = document.querySelector(`.next_${classItems}`);
         right.addEventListener("click", function () {
           plusSlides(+1, false);

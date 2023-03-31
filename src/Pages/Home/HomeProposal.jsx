@@ -4,6 +4,7 @@ import { TitleWithHr } from "../../Layout/TitleWithHr";
 
 export const HomeProposal = ({
   titulo_propuesta,
+  titulo_propuesta_ENG,
   subtitulo_propuesta,
   info_propuesta,
   url_boton_propuesta,
@@ -25,11 +26,13 @@ export const HomeProposal = ({
             info={info_propuesta}
             url={url_boton_propuesta}
             textButton={text_boton_propuesta}
+            title_ENG={titulo_propuesta_ENG}
+
           />
         </div>
 
         <div className="lg:w-[48%] imagen-proposal duration-1000 translate-x-[100vw]">
-          <img src={imagen_propuesta} alt="imagen_propuesta" />
+          <img src={imagen_propuesta.url} alt="imagen_propuesta" />
         </div>
       </div>
     </section>

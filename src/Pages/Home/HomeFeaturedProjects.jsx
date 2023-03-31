@@ -6,7 +6,7 @@ import { Slider } from "../../Utils/Slider/Slider";
 export const HomeFeaturedProjects = ({
   titulo_proyectos_destacados,
   subtitulo_proyectos_destacados,
-  projects,
+  slider,
 }) => {
   return (
     <section className="home-featured-projects">
@@ -17,7 +17,7 @@ export const HomeFeaturedProjects = ({
         />
       </div>
 
-      <Slider items={projects} classSlides={"projects-home"} />
+      <Slider items={slider} classSlides={"projects-home"} />
 
       <div className="max_width_container">
         <Button styles="w-full mb-10 lg:m-auto lg:block lg:mt-10  ">
@@ -26,7 +26,7 @@ export const HomeFeaturedProjects = ({
 
         <div className="flex justify-end text-right lg:text-left mt-32 mb-16">
           <InvitationToContact
-            styles="invitation-to-contact w-3/4 lg:max-w-[50%] mb-10"
+            styles="invitation-to-contact w-3/4 mb-10"
             boton_text="Hablemos"
             text="de cómo podemos **construir** el espacio de tus **Sueños**."
           />

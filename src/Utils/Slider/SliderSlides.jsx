@@ -8,8 +8,8 @@ export const SliderSlides = ({ items, classSlides, fullView, setFullView }) => {
           key={`slider_${classSlides}_${i + 1}`}
           className={
             fullView
-              ? `slider ${classSlides} h-[40vh] lg:h-[90vh] relative transition-all duration-100`
-              : `slider ${classSlides} h-[200px] lg:h-[80vh] relative transition-all duration-100`
+              ? `slider  ${classSlides} h-[40vh] lg:h-[90vh] relative transition-all duration-100`
+              : `slider  ${classSlides} h-[200px] lg:h-[80vh] relative transition-all duration-100`
           }
         >
           {/* Image */}
@@ -21,7 +21,7 @@ export const SliderSlides = ({ items, classSlides, fullView, setFullView }) => {
           >
             <img
               className="h-full object-cover object-left-top brightness-75 cursor-pointer"
-              src={item.imagen}
+              src={item.imagen.url}
               alt="slider-imagen"
               onClick={() => setFullView(!fullView)}
             />

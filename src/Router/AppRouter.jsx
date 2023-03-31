@@ -10,6 +10,7 @@ import { Showroom } from "../Pages/Showroom/Showroom";
 export const AppRouter = () => {
   return (
     <Routes>
+      {/* Spanish routes */}
       <Route exact path="/" element={<Home />} />
       <Route exact path="/favoritos" element={<Favorites />} />
       <Route exact path="/marcas" element={<Brands />} />
@@ -17,6 +18,16 @@ export const AppRouter = () => {
       <Route exact path="/proyectos" element={<Projects />} />
       <Route exact path="/nosotros" element={<AboutUs />} />
       <Route exact path="/contacto" element={<Contact />} />
+
+      {/* English roures */}
+
+      <Route exact path="/eng" element={<Home />} />
+      <Route exact path="/eng/favorites" element={<Favorites />} />
+      <Route exact path="/eng/brands" element={<Brands />} />
+      <Route exact path="/eng/showrooms" element={<Showroom />} />
+      <Route exact path="/eng/projects" element={<Projects />} />
+      <Route exact path="/eng/aboutus" element={<AboutUs />} />
+      <Route exact path="/eng/contact" element={<Contact />} />
     </Routes>
   );
 };

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 export const useFetch = (urlPage, dataInfo = {}, id = true ) => {
 
-  const url = `http://localhost:1337/${urlPage}`
+  const url = `https://hajjcms.herokuapp.com/${urlPage}`
   const [state, setState] = useState({
     data: dataInfo,
     isLoading: true,

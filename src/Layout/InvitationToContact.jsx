@@ -8,16 +8,15 @@ export const InvitationToContact = ({ boton_text, text, styles }) => {
 
   useAnimationScroll('invitation-to-contact', 'active_animation')
   return (
-    <div className={styles}>
+    <div className={`${styles} lg:max-w-[25%]`}>
       <Link
         smooth={true}
         speed={500}
-        className={`inline-block border text-xl lg:text-2xl rounded-2xl px-5 py-[0.5px] mt-6 text-center eleanor-light w-fit`}
+        className={`inline-block text-2xl lg:text-4xl py-[0.5px] mt-6 text-center eleanor-light w-fit cursor-pointer hover:scale-110 hover:text-2xl `}
         to="footer"
       >
         {boton_text}
       </Link>
-
       {/* lines of css are wrote in base.scss */}
       <ReactMarkdown
         rehypePlugins={[rehypeRaw]}

@@ -1,37 +1,45 @@
 import { onToggleMenu } from "../../helpers/onToggleMenu";
 import { MenuLink } from "./MenuLink";
-import menu from "./menu.json";
 import { useNavigate } from "react-router-dom";
+import menu from "./menu.json";
 
 export const Menu = () => {
   const navigate = useNavigate();
 
   return (
     <section className="menu fixed top-0 h-screen w-screen bg-crema z-10 invisible opacity-0 transition-all duration-500  ">
-      <div className="max_width_container h-full">
         {/* Close and multilanguaje button */}
-        <div className=" w-[100px] absolute right-0 top-5 cursor-pointer flex items-center justify-between z-10 ">
-          <div className="w-[35px] h-[35px] text-black border-2 rounded-[100%] p-1 flex items-center justify-center ">
+        <div className=" w-[100px] absolute top-5 right-[7.5%] cursor-pointer flex items-center justify-between z-10 ">
+          <div
+            onClick={() => {
+              navigate("/en/");
+              onToggleMenu();
+            }}
+            className="w-[35px] h-[35px] text-black border-2 rounded-[100%] p-1 flex items-center justify-center hover:scale-110 transition-all duration-500"
+          >
             EN
           </div>
           <img
-            className="w-[30px] "
+            className="w-[30px] hover:scale-110 transition-all duration-500"
             onClick={onToggleMenu}
             src="/assets/iconos/x.png"
             alt="equis"
           />
         </div>
+      <div className="max_width_container h-full">
 
-        {/* Menu links and logo */}
+        {/* Menu links*/}
         <div className="lg:flex lg:relative h-full">
           <div className="absolute top-28">
-            {menu.map((item) => (
-              <MenuLink {...item} />
+            {menu.map((item, i) => (
+              <MenuLink key={`key_menu_${i}`} {...item} />
             ))}
           </div>
 
-          <div className="w-3/4  m-auto absolute bottom-10 left-0 right-0 lg:w-1/4 lg:m-0 lg:right-initial ">
+          {/* LOGO HAJJ */}
+          <div className="w-3/4  m-auto absolute bottom-10 left-0 right-0 lg:w-1/4 lg:m-0 lg:left-[initial] hover:scale-110 transition-all duration-500 ">
             <img
+              className="cursor-pointer "
               onClick={() => {
                 navigate("/");
                 onToggleMenu();
