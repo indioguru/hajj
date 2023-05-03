@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { SliderButtons } from "../Utils/Slider/SliderButtons";
 import { useSlider } from "../Utils/Slider/useSlider";
 
-export const BannerSlider = ({ banner, show }) => {
+export const BannerSlider = ({ banner, show, lang }) => {
   const { number } = useSlider(banner, "slide-banner-home");
 
   useEffect(() => {
@@ -13,7 +13,9 @@ export const BannerSlider = ({ banner, show }) => {
   }, []);
   return (
     <>
-      <section className={`banner-container h-screen w-screen relative overflow-hidden`}>
+      <section
+        className={`banner-container bg-black h-screen w-screen relative z-20 overflow-hidden`}
+      >
         {/* Logo */}
         <div>
           <img
@@ -30,7 +32,7 @@ export const BannerSlider = ({ banner, show }) => {
         {/* Slides for banner */}
         <div className={!show && "animation-home-banner"}>
           {banner.map((item) => (
-            <div className="slide-banner-home fade">
+            <div key={item._id} className="slide-banner-home fade">
               <img
                 className="absolute w-full h-full object-cover brightness-50 "
                 src={item.imagen.url}
@@ -45,11 +47,34 @@ export const BannerSlider = ({ banner, show }) => {
                 }
               >
                 <p className="eleanor-light text-2xl lg:text-4xl">
-                  {item.titulo}
+                  {lang === "eng" ? (
+                    <> {item.titulo_ENG}</>
+                  ) : (
+                    <> {item.titulo}</>
+                  )}
                 </p>
-                <a href={item.link_referencia} className="text-xs lg:text-xl">
-                  Descubre más de esta referencia
-                </a>
+
+                {item.link_referencia && (
+                  <a
+                    className="block tertiary lg:w-2/3 mt-2 text-2xl group "
+                    href={item.link_referencia}
+                    target="_blank"
+                  >
+                    <span className="duration-500 group-hover:translate-x-[-3px] inline-block ">
+                      {lang === "eng" ? (
+                        <>Find out more about this reference</>
+                      ) : (
+                        <>Descubre más de esta referencia</>
+                      )}
+                    </span>
+
+                    <img
+                      className="w-[15px] inline-block ml-2 duration-500 group-hover:translate-x-2 "
+                      src="/assets/iconos/oscuro/flecha_texto.png"
+                      alt="flecha_texto_fb"
+                    />
+                  </a>
+                )}
               </div>
             </div>
           ))}

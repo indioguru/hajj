@@ -1,38 +1,44 @@
 [
     {
+        "link": "/",
+        "texto": "Home",
+        "link_ENG": "/en/",
+        "texto_ENG": "Home"
+    },
+    {
         "link": "/nosotros",
         "texto": "Nosotros",
-        "link_ENG": "/eng/about-us",
+        "link_ENG": "/en/aboutus",
         "texto_ENG": "About us"
     },
     {
         "link": "proyectos",
         "texto": "Proyectos",
-        "link_ENG": "/eng/projects",
+        "link_ENG": "/en/projects",
         "texto_ENG": "Projects"
     },
     {
         "link": "/marcas",
         "texto": "Marcas",
-        "link_ENG": "/eng/brands",
+        "link_ENG": "/en/brands",
         "texto_ENG": "Brands"
     },
     {
         "link": "/showrooms",
         "texto": "Showroom",
-        "link_ENG": "/eng/showroom",
+        "link_ENG": "/en/showroom",
         "texto_ENG": "Showroom"
     },
     {
         "link": "/favoritos",
         "texto": "Favoritos",
-        "link_ENG": "/eng/favorites",
+        "link_ENG": "/en/favorites",
         "texto_ENG": "Favorites"
     },
     {
         "link": "/contacto",
         "texto": "Contacto",
-        "link_ENG": "/eng/contact",
+        "link_ENG": "/en/contact",
         "texto_ENG": "Contact"
     }
 ]

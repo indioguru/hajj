@@ -6,7 +6,7 @@ export const useLanguaje = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname.includes("/eng")) {
+    if (location.pathname.includes("/en")) {
       setLang("eng");
     } else {
       setLang("esp");

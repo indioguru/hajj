@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 
-export const useFetch = (urlPage, dataInfo = {}, id = true ) => {
-
-  const url = `https://hajjcms.herokuapp.com/${urlPage}`
+export const useFetch = (urlPage, dataInfo = {}, id = true) => {
+  const url = `https://hajjcms.herokuapp.com/${urlPage}`;
   const [state, setState] = useState({
     data: dataInfo,
     isLoading: true,
@@ -24,8 +23,6 @@ export const useFetch = (urlPage, dataInfo = {}, id = true ) => {
       hasError: null,
     });
   };
-
-  
 
   useEffect(() => {
     getFetch();

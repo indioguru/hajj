@@ -6,15 +6,13 @@ export const useSlider = (items, classItems) => {
   const [number, setNumber] = useState(1);
 
   useEffect(() => {
-    if (items.length > 0) {
+    if (items.length > 0 && classItems) {
       let slideIndex = 1;
-      let time = 5000;
+      let time = 500000;
       showSlides(slideIndex);
       setNumber(slideIndex);
       function showSlides(n) {
         let slides = document.getElementsByClassName(classItems);
-        let dots = document.getElementsByClassName(`dot_${classItems}`);
-
         let i;
 
         if (n > slides.length) {
@@ -29,11 +27,9 @@ export const useSlider = (items, classItems) => {
           slides[i].style.display = "none";
         }
 
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
+        if (slides.length > 0) {
+          slides[slideIndex - 1].style.display = "block";
         }
-        // dots[slideIndex - 1].className += " active";
-        slides[slideIndex - 1].style.display = "block";
       }
 
       // Next/previous controls
@@ -78,7 +74,7 @@ export const useSlider = (items, classItems) => {
         setNumber(currentSlideSlider);
       }
     }
-  }, [items, currentSlideSlider]);
+  }, [items, currentSlideSlider, classItems]);
 
   return {
     number,

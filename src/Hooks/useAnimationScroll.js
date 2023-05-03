@@ -8,9 +8,7 @@ export const useAnimationScroll = (element, classAnimation) => {
       if (contenido !== null) {
         const rect = contenido.getBoundingClientRect();
 
-
-
-        if (rect.top / 2 <= heightTotal / 2 / 2) {
+        if (rect.top / 2 <= heightTotal / 2 / 1.1) {
           contenido.classList.add(clase);
         } else {
           contenido.classList.remove(clase);

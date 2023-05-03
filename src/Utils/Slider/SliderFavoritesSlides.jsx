@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 
-export const SliderSlides = ({
+export const SliderFavoritesSlides = ({
   items,
   classSlides,
   fullView,
@@ -15,7 +15,7 @@ export const SliderSlides = ({
           className={
             fullView && window.innerWidth < 999
               ? `slider  ${classSlides} h-[40vh] lg:h-[90vh] relative transition-all duration-100`
-              : `slider  ${classSlides} h-[200px] lg:h-[initial] relative transition-all duration-100`
+              : `slider  ${classSlides} h-[200px] lg:h-[auto] relative transition-all duration-100`
           }
         >
           {/* Image */}
@@ -27,7 +27,7 @@ export const SliderSlides = ({
           >
             {item.imagen && (
               <img
-                className="h-full object-cover lg:object-contain object-left-top brightness-75 cursor-pointer"
+                className="h-full object-cover object-left-top brightness-75 cursor-pointer"
                 src={item.imagen.url}
                 alt="slider-imagen"
                 onClick={() => setFullView(!fullView)}
@@ -35,9 +35,19 @@ export const SliderSlides = ({
             )}
           </Link>
           {/* Project name */}
-          <h2 className="absolute text-xl lg:text-4xl bottom-5 left-0 right-0 m-auto w-3/4 text-center ">
-            {item.nombre}
-          </h2>
+
+          <div className="flex absolute bottom-5 w-[90%] left-0 right-0 m-auto justify-between items-end ">
+            <div className="w-2/4">
+              <p className="text-crema text-[16px] mb-1 lg:text-2xl">
+                {item.nombre_referencia}
+              </p>
+              <p className="text-crema">{item.nombre_marca}</p>
+            </div>
+
+            <div className="w-1/4 lg:w-[150px] ">
+              {item.logo && <img src={item.logo.url} alt="logo" />}
+            </div>
+          </div>
 
           {children}
 

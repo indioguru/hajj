@@ -5,7 +5,10 @@ import { useSlider } from "./useSlider";
 export const SliderBrands = ({ items, classSlides }) => {
   const { number } = useSlider(items, classSlides);
   return (
-    <div className={`slider slider_${classSlides}`}>
+    <div className={`slider relative z-0 slider_${classSlides}`}>
+
+      {/* SLIDES */}
+      <SliderBrandsSlides items={items} classSlides={classSlides} />
       {/* BUTTONS/ARROWS */}
       <div className="ml-5 mb-5">
         <SliderButtons
@@ -14,9 +17,6 @@ export const SliderBrands = ({ items, classSlides }) => {
           classSlides={classSlides}
         />
       </div>
-
-      {/* SLIDES */}
-      <SliderBrandsSlides items={items} classSlides={classSlides} />
     </div>
   );
 };

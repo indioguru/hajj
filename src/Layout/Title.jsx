@@ -1,14 +1,18 @@
-import { useAnimationScroll } from "../Hooks/useAnimationScroll";
+import { useLanguaje } from "../Hooks/useLanguaje";
 
-export const Title = ({ title, subtitle }) => {
-  useAnimationScroll("title", "translate-zero");
+export const Title = ({ title, subtitle, title_ENG, subtitle_ENG }) => {
+  const { lang } = useLanguaje();
 
   return (
-    <div className="title duration-500 translate-x-[-100vw]">
+    <div className="title duration-500 ">
       <div className="text-coffee">
-        <p className="text-xl mb-1 lg:text-3xl  ">{title}</p>
+        <p className="text-xl mb-1 lg:text-3xl  ">
+          {lang === "eng" ? <>{title_ENG}</> : <>{title}</>}
+        </p>
       </div>
-      <h2 className="text-3xl lg:text-4xl lg:max-w-[50%] ">{subtitle}</h2>
+      <h2 className="text-3xl lg:text-4xl lg:max-w-[50%] ">
+        {lang === "eng" ? <>{subtitle_ENG}</> : <>{subtitle}</>}
+      </h2>
     </div>
   );
 };

@@ -7,7 +7,7 @@ export const TitleWithHr = () => {
   return (
     <>
       <div className="flex flex-row-reverse">
-        <p className="leading-luxury eleanor-light w-[92.5%] lg:max-w-[50%] text-[18px] lg:text-2xl duration-500 opacity-0">
+        <p className="leading-luxury eleanor-light w-[92.5%] lg:max-w-[50%] text-[18px] lg:text-xl duration-500 opacity-0">
           Leading luxury interior design company
         </p>
       </div>

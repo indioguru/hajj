@@ -9,6 +9,12 @@ body {
   color: #ebe9e3;
   background-color: #252825;
   overflow-x: hidden;
+  text-align: justify;
+}
+
+.map-movil::-webkit-scrollbar {
+  width: 0px;
+  height: 0;
 }
 
 /* width */
@@ -42,9 +48,11 @@ body {
 a {
   text-decoration: none;
   transition: 0.5s all;
-  &:hover {
-    font-size: 13px;
-  }
+}
+
+a:hover {
+  font-size: none;
+  transform: scale(1.1);
 }
 
 hr {
@@ -92,28 +100,98 @@ img {
 }
 
 /* Invitation to contact */
+.invitation-to-contact {
+  a {
+    border-color: #7c706e;
+  }
+  hr {
+    transition: 0.5s all;
+  }
+}
 .invitation-to-contact p {
-  font-size: 18px;
+  font-size: 14px;
+  font-family: "Elanor Extra light" !important;
 }
 
 .invitation-to-contact strong {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 24px;
   transition: 0.5s all;
   font-weight: 100;
-  font-family: "PPRadioGrotesk-Ultralight";
 }
 
 .invitation-to-contact div {
-  display: inline-block;
+  // display: inline-block;
 }
 
 @media (min-width: 1024px) {
+  .invitation-to-contact {
+    hr {
+      border: 0.5px solid #7c706e;
+    }
+    a {
+      border-color: transparent;
+    }
+    a:hover {
+      border-color: #7c706e;
+
+      ~ div hr {
+        opacity: 0;
+      }
+    }
+  }
   .invitation-to-contact p {
-    font-size: 18px;
+    font-size: 20px;
+    padding-top: 10px;
   }
 
   .invitation-to-contact strong {
     font-size: 30px;
+  }
+}
+
+.gradient-black {
+  background: transparent
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    )
+    0% 0% no-repeat padding-box;
+}
+
+.tertiary {
+  font-family: "PPRadioGrotesk-Regular";
+  font-size: 16px !important;
+  line-height: 0px !important;
+
+  &:hover {
+    font-size: 16px !important;
+    transform: scale(1);
+  }
+}
+
+// For projects inside the project page
+.projects-all .item-project:nth-child(odd) {
+  .slider-projects {
+    transform: translate(-100vw);
+  }
+}
+
+.projects-all .item-project:nth-child(even) {
+  .slider-projects {
+    transform: translate(100vw);
+  }
+}
+
+.favorites-items .favorite-item:nth-child(even) {
+  .favorite-item-container {
+    transform: translate(100vw);
+  }
+}
+
+.favorites-items .favorite-item:nth-child(odd) {
+  .favorite-item-container {
+    transform: translate(-100vw);
   }
 }
